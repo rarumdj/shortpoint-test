@@ -30,8 +30,8 @@ const Home = React.memo(() => {
     }
   };
   return (
-    <div className="flex h-screen">
-      <div className="w-4/12 h-full shadow-neutral-800 shadow-xl-right relative">
+    <div className="flex md:flex-row flex-col h-screen">
+      <div className="md:w-4/12 w-full h-full shadow-neutral-800 shadow-xl-right relative">
         <Header />
         <Banner />
         <div className="bg-white p-6 h-[70vh] overflow-y-auto ">
@@ -58,7 +58,7 @@ const Home = React.memo(() => {
         </div>
       </div>
 
-      <div className="w-8/12 h-full flex flex-col">
+      <div className="md:w-8/12 w-full h-full flex flex-col">
         <CreateTask
           tasks={tasks}
           setTasks={setTasks}

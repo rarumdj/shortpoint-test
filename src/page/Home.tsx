@@ -9,7 +9,7 @@ const Home = React.memo(() => {
   const [tasks, setTasks] = useState<Itask[]>([
     { id: 1, text: "Training at the Gym", completed: false },
     { id: 2, text: "Play Paddle with friends", completed: false },
-    { id: 2, text: "Burger BBQ with family", completed: false },
+    { id: 3, text: "Burger BBQ with family", completed: false },
   ]);
   const [selectedTask, setSelectedTask] = useState<Partial<Itask>>({});
   const inputRef = useRef<HTMLInputElement>(null);
